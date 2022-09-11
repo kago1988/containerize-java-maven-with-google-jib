@@ -26,5 +26,3 @@ Host the app via
 ```
 docker run -p 8082:8080 kago1988/demo:0.1.0-SNAPSHOT
 ```
-
-Lot's of fun! 
