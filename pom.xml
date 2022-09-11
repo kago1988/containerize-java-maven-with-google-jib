@@ -14,7 +14,7 @@
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -64,6 +64,21 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<from>
+						<image>adoptopenjdk/openjdk11:jre-11.0.9.1_1-alpine</image>
+					</from>
+					<to>
+						<image>registry.hub.docker.com/kago1988/demo:0.1.0-SNAPSHOT</image>
+					</to>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
